@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="	https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="got-phrases" id="got-phrases">
+				<h2>When you play</h2>
+				<h2>The Game of Thrones</h2>
+				<h2>either you win</h2>
+				<h2>or</h2>
+				<h2>you die</h2>
+				<h2>refresh to play again</h2>
+			</div>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/jquery.lettering.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("#got-phrases > h2").lettering('words').children("span").lettering().children("span").lettering();
+			})
+		</script>
+	</body>
+</html>
